@@ -8,7 +8,7 @@ function getInteger() {
   return array.sort().slice(-3).reduce((a,b) => a * b);
  }
 
-console.log(getInteger(1,10));
+console.log(getInteger());
 
 
 
@@ -34,14 +34,14 @@ function countSeconds(){
 //Define an object happiness within 5 properties. Each property should have default integer value, 
 //representing its priority. Then create a function that returns a list of property names sorted by priority (highest is on top).
 
-const hapiness = {first : 5,
+const happiness = {first : 5,
                   second : 4,
                   third : 3,
                   forth : 2,
                   fifth : 1 
                   };
 function getProperties(){
- const arr = Object.entries(hapiness).sort((a, b) => a[1] - b[1]);
+ const arr = Object.entries(happiness).sort((a, b) => a[1] - b[1]);
  const newArr = [];
   for(let i =0; i< arr.length;i++){
    newArr.push(arr[i][0]); 
